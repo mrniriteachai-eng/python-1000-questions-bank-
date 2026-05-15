@@ -61,6 +61,21 @@ result = pd.merge(df1, df2, on="id")
 
 print(result)
 
+import pandas as pd
+
+df1  = pd.DataFrame({
+    "id" : [1,3,5],
+    "name" : ["nirmal", "saud", "niri"],
+
+})
+
+df2 = pd.DataFrame({
+    "id" : [1,3,5],
+    "marks" : [80, 90,100]
+})
+
+result = pd.merge(df1, df2, on="id")
+print(result)
 
 # ANOTHER EXAMPLE OF MERGE 
 

@@ -12,15 +12,15 @@
 # ⚡ Lambda function
 # lambda x: x + 5
 # 📊 Example Data
-# import pandas as pd
+import pandas as pd
 
-# df = pd.DataFrame({
-#     "name": ["Ram", "Hari", "Sita"],
-#     "marks": [80, 90, 85]
-# })
+df = pd.DataFrame({
+    "name": ["Ram", "Hari", "Sita"],
+    "marks": [80, 90, 85]
+})
 # 🔥 1️⃣ Add 5 to marks using lambda
-# df["marks_plus_5"] = df["marks"].apply(lambda x: x + 5)
-# print(df)
+df["marks_plus_5"] = df["marks"].apply(lambda x: x + 5)
+print(df)
 # 📤 Output
 #    name  marks  marks_plus_5
 # 0   Ram     80            85

@@ -32,6 +32,7 @@ data = {
 df = pd.DataFrame(data)
 print(df)
 
+
 import pandas as pd
 
 
@@ -74,7 +75,7 @@ print(pd.__version__)
 # for example
 
 import pandas as pd
-import numpy as np
+
 
 data = {
     "name": ["Ram", "Hari", None, "Gita"],
@@ -85,6 +86,7 @@ data = {
 df = pd.DataFrame(data)
 print(df.isnull())
 
+
 # 🔥 df.isnull() के हो?
 
 # 👉 Missing value छ कि छैन भनेर check गर्ने method
@@ -93,6 +95,7 @@ print(df.isnull())
 
 # missing छ → True
 # missing छैन → False
+
 
 # 🔍 1 Check Missing Values (True/False)
 
@@ -141,6 +144,7 @@ df.isnull()
 # | True  | data missing छ ❌ |
 
 
+
 # 🔢 2️ Count Missing Values (IMPORTANT 🔥)
 
 
@@ -157,7 +161,7 @@ import pandas as pd
 import numpy as np
 
 data = {
-    "name": ["Ram", "Hari", "sita"],
+    "name": ["Ram", "Hari", None],
     "marks": [80, None, 85],
     "age": [20, 21, None]
 }
@@ -172,6 +176,8 @@ print(df.isnull().sum())
 # 1  Hari    NaN  21.0
 # 2  None   85.0   NaN
 
+
+
 # 🔢 3 Missing Values Count
 
 df.isnull().sum()
@@ -184,8 +190,11 @@ df.isnull().sum()
 # name → 1 missing
 # marks → 1 missing
 # age → 1 missing
+
 # 🔥 Inside Logic (Simple)
+
 # df.isnull()  → True/False matrix बनाउँछ
+
 # .sum()       → True को count गर्छ
 
 # 👉 True = 1
@@ -343,7 +352,7 @@ data = {
 }
 
 df = pd.DataFrame(data)
-print(df)
+print(df.fillna(0))
 
 # 📤 Original Data
 #    name  marks   age
@@ -362,6 +371,7 @@ df.fillna(0)
 
 
 # 📊 Example Data
+
 import pandas as pd
 import numpy as np
 
@@ -401,6 +411,7 @@ df.fillna(0)
 # ❌ text (name, city)
 
 # 🔥 Better Practice (Real World)
+
 df["marks"].fillna(df["marks"].mean(), inplace=True)
 df["age"].fillna(df["age"].median(), inplace=True)
 df["name"].fillna("Unknown", inplace=True)
@@ -441,7 +452,7 @@ import pandas as pd
 
 data = {
     "name": ["Ram", "Hari", "Hari", "Sita", "Ram"],
-    "marks": [80, 90, 90, 85, 90]
+    "marks": [80, 90, 90, 85, 80]
 }
 
 df = pd.DataFrame(data)

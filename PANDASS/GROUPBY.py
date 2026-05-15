@@ -19,7 +19,7 @@ data = {
 }
 
 df = pd.DataFrame(data)
-print(df)
+print(df.groupby("subject"))
 
 
 
@@ -131,6 +131,8 @@ df = pd.DataFrame(data)
 print(df)
 
 
+#### sum
+
 import pandas as pd
 
 data = {
@@ -147,16 +149,14 @@ print(df.groupby("subject")["marks"].sum())
 
 
 ########
-import pandas as np
+import pandas as pd
 
 data = {
     "name" : ["nirmal", "mohan", "bhupendra"],
     "subject" : ["math", "physics" , "physics", "math"],
-    "marks" : [80, 90,100,70]
+    "marks" : [80, 90, 100,70]
 
 }
-
-
 df = pd.DataFrame(data)
 
 print(df.groupby("subject")["marks"].sum())
@@ -198,6 +198,22 @@ print(df.groupby("subject")["marks"].sum())
 # Math average = 80
 
 # 🔥 Pandas मा कसरी गर्ने?
+
+
+
+
+import pandas as pd
+
+data = {
+    "name": ["Ram", "Hari", "Sita", "Gita", "Ram"],
+    "subject": ["Math", "Math", "Science", "Math", "Science"],
+    "marks": [80, 90, 85, 70, 95]
+}
+
+df = pd.DataFrame(data)
+
+print(df.groupby("subject")["marks"].mean())
+
 
 df.groupby("subject")["marks"].mean()
 

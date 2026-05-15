@@ -38,7 +38,7 @@ print(df)
 # 2  Sita     85   19
 # 3  Gita     70   22
 
-# 👉 अब यही data बाट हामी Selection + Filtering (Day 2) apply गर्छौँ
+# 👉 अब यही data बाट हामी Selection + Filtering apply गर्छौँ
 
 # 🔍 1️⃣ Column Select
 
@@ -52,8 +52,6 @@ data = {
 }
 df = pd.DataFrame(data)
 print(df["name"])
-
-
 
 
 df["name"]
@@ -88,7 +86,7 @@ data = {
     "marks": [ 90,100]
 }
 df = pd.DataFrame(data)
-print(df.iloc[1])
+print(df.iloc[0])
 
 # 👉 same result (index use गरेर)
 
@@ -115,6 +113,10 @@ df.iloc[0:2]
 # | iloc   | position (0,1,2)   |
 
 
+
+
+
+
 # 🔥 FILTERING के हो?
 
 # 👉 Filtering = condition लगाएर data निकाल्ने process
@@ -137,15 +139,15 @@ data = {
 
 df = pd.DataFrame(data)
 
-
-
 print(df[df["marks"] > 80])
+
 
 
 # 🔍 1️⃣ Basic Filtering
 
 
 # 👉 Marks > 80
+
 df[df["marks"] > 80]
 
 # 💡 Meaning:
@@ -153,6 +155,7 @@ df[df["marks"] > 80]
 
 
 # 🔍 2️⃣ Age condition
+
 
 # 👉 Age < 21
 
@@ -162,12 +165,15 @@ import pandas as pd
 
 data = {
     "name" : ["nirmal" , "mohan", "bhupendra"],
-    "age" : [18, 20, 22]
+    "age" : [18, 20, 22],
+    "marks" : [80, 90, 100]
 
 }
+
 df = pd.DataFrame(data)
 
-print(df[df["age"] < 21])
+print(df[(df["marks"] > 80) & (df["age"] < 21)])
+
 
 
 # 🔗 3️⃣ Multiple Conditions (IMPORTANT 🔥)
@@ -177,9 +183,24 @@ print(df[df["age"] < 21])
 
 df[(df["marks"] > 80) & (df["age"] < 21)]
 
+
 # 👉 OR condition (|)
 
-df[(df["marks"] > 85) | (df["age"] > 20)]
+
+
+import pandas as pd 
+
+data = {
+    "name" : ["nirmal" , "mohan", "bhupendra"],
+    "age" : [18, 20, 22],
+    "marks" : [80, 90, 100]
+
+}
+
+df = pd.DataFrame(data)
+
+
+print(df[(df["marks"] > 85) | (df["age"] > 20)])
 
 
 # ⚠️ Important Rule
@@ -206,6 +227,7 @@ data = {
 }
 
 df = pd.DataFrame(data)
+print(df)
 
 
 
@@ -277,6 +299,7 @@ df["marks"] > 80 & df["age"] < 21
 
 # Python precedence issue हुन्छ
 # bracket MUST हुन्छ
+
 # 🧠 Easy Trick (Exam Tip 💡)
 
 # 👉 Always याद गर:
@@ -298,20 +321,20 @@ df["marks"] > 80 & df["age"] < 21
 
 # 👉 Multiple conditions = multiple rules apply गरेर specific data निकाल्ने
 
-🧪 Practice (IMPORTANT 🔥)
-Q1
+# 🧪 Practice (IMPORTANT 🔥)
+# Q1
 
-Marks > 80 AND age > 20
+# Marks > 80 AND age > 20
 
-Q2
+# Q2
 
-Marks > 85 OR age < 20
+# Marks > 85 OR age < 20
 
-Q3
+# Q3
 
-Only show names where:
+# Only show names where:
 
-marks > 80 AND age < 21
+# marks > 80 AND age < 21
 
 
 
@@ -331,7 +354,9 @@ marks > 80 AND age < 21
 # 👉 Filtering गरेर निकालिएको data बाट केवल एउटा column मात्र लिनु
 
 # Simple मा:
+
 # 👉 पहिले condition लगाउने
+
 # 👉 अनि चाहिएको column मात्र निकाल्ने
 
 # 📊 Example Data
@@ -361,8 +386,11 @@ df["marks"] > 80
 # 👉 true/false बनाउँछ
 
 # Step 2: Data filter हुन्छ
+
 df[df["marks"] > 80]
+
 # Step 3: Only column निकालिन्छ
+
 ["name"]
 # 🔥 Example 2: Age < 21 भए marks मात्र
 df[df["age"] < 21]["marks"]

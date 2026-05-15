@@ -93,7 +93,18 @@ data = {
 df = pd.DataFrame(data)
 
 
-print(df)
+print(df
+import pandas as pd
+
+data = {
+    "name": ["Ram", "Hari", "Sita", "Gita", "Ram"],
+    "subject": ["Math", "Math", "Science", "Math", "Science"],
+    "marks": [80, 90, 85, 70, 95]
+}
+
+df = pd.DataFrame(data)
+
+print(df.groupby("subject")["marks"].sum()))
 
 pd.melt(df_wide, id_vars="name")
 
@@ -126,7 +137,7 @@ data = {
 }
 
 df = pd.DataFrame(data)
-print(df)
+print(df.pivot_table(values="marks", index="name", columns="subject", aggfunc="sum"))
 
 
 # 🔥 Pivot Table (Basic)

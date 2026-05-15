@@ -71,9 +71,9 @@ data = {
     "marks" : [90,100]
 }
 
-pf = pd.DataFrame(data)
+df = pd.DataFrame(data)
 
-print(pf)
+print(df)
 
 
 s = pd.Series([10,20,30])

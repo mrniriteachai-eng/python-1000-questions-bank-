@@ -57,6 +57,9 @@ s = pd.Series([80, 90, 85], index=["Ram", "Hari", "Sita"])
 print(s)
 print(s["Ram"])
 
+
+
+
 # ⚡ Series vs List
 # | Feature | List       | Series                 |
 # | ------- | ---------- | ---------------------- |
@@ -77,6 +80,12 @@ print(s["Ram"])
 
 # values: 10, 20, 30
 # index: A, B, C
+
+
+import pandas as pd
+s = pd.Series([10, 20, 30], index=["A", "B", "C"])
+print(s)
+print(s["B"])
 
 # Q2
 
@@ -122,6 +131,17 @@ data = {
 
 df = pd.DataFrame(data)
 
+print(df)
+
+
+import pandas as pd
+
+data = {
+    "name" : ["nirmal", "saud", "niri"],
+    "marks" : [90, 95, 100]
+}
+
+df = pd.DataFrame(data)
 print(df)
 
 
@@ -183,7 +203,6 @@ import pandas as pd
 data  = {
     "name" : ["nirmal","mohan","bhupendra"],
     "marks" : [20, 97, 99]
-
 }
 
 pf = pd.DataFrame(data)
@@ -192,6 +211,7 @@ print(df)
 
 
 # 🧠 Structure Breakdown
+
 # 1️⃣ Rows (Horizontal)
 
 # 👉 यो line-wise data हो
@@ -253,7 +273,7 @@ df["name"]
 df.loc[0]
 # Shape (rows, columns)
 
-# df.shape
+df.shape
 
 
 # 🧠 One Line Summary
@@ -281,6 +301,8 @@ df.loc[0]
 
 
 # ⚡ Create DataFrame (Different Ways)
+
+
 
 # 1. Dictionary बाट (most common)
 
@@ -324,6 +346,7 @@ print(df)
 
 # keys = column names
 # values = column data
+
 # ⚠️ Important Rule
 
 # 👉 All columns must have same number of values
@@ -340,6 +363,7 @@ data = {
 # same length for all columns
 
 # 🔥 More Columns Example
+import pandas as pd
 data = {
     "name": ["Ram", "Hari", "Sita"],
     "marks": [80, 90, 85],
@@ -392,7 +416,7 @@ Q2
 
 # Add new column:
 
-marks: 80, 85, 
+marks: 80, 85, 90
 
 Q3
 
