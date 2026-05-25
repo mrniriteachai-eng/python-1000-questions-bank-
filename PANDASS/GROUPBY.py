@@ -35,8 +35,11 @@ df.groupby("subject")
 # 💡 मतलब:
 
 # Math group बन्यो
+
 # Science group बन्यो
+
 # 🔥 Group लाई देखाउने तरीका
+
 # 👉 Sum निकालेर देखाउने
 
 

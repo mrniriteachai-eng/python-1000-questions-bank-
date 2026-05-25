@@ -25,21 +25,24 @@ plt.show()
 
 
 
-
 import matplotlib.pyplot as plt
 
-x = [3,4,5,6]
-y = [8,9,6,7]
+x = [1, 2, 3, 4]
+y = [3, 4, 5, 6]
 
 plt.scatter(x,y)
-plt.titlr("scatter plot example")
-plt.xlabel("x axis")
-plt.ylabel("y axis")
+
+plt.title("Scatter Plot Example")
+plt.xlabel("X Axis")
+plt.ylabel("Y Axis")
 plt.show()
 
 
 
+
+
 # 🔍 Explanation
+
 # ✅ plt.scatter(x, y)
 
 # 👉 scatter plot बनाउँछ
@@ -103,20 +106,6 @@ plt.scatter(x, y)
 plt.scatter(x, y, color="red", marker="o")
 
 
-#### 
-
-import matplotlib.pyplot as plt
-
-x = [1, 2, 3, 4, 5]
-y = [2, 4, 5, 4, 6]
-
-plt.scatter(x, y, color="red", marker="*")
-
-plt.title("Scatter Plot Example")
-plt.xlabel("X Axis")
-plt.ylabel("Y Axis")
-
-plt.show()
 
 # 🔍 Breakdown
 
@@ -158,6 +147,7 @@ plt.show()
 # 👉 dot size ठूलो हुन्छ
 
 # 👉 Different colors for each point
+
 colors = ["red", "blue", "green", "orange", "purple"]
 
 plt.scatter(x, y, c=colors)
@@ -266,6 +256,7 @@ y = [2,4,5,4,6]
 # 👉 प्रत्येक pair = एउटा dot
 
 # 4️⃣ Scatter Plot
+
 plt.scatter(
 
 # 👉 scatter graph start
@@ -333,6 +324,7 @@ marker="o",
 # 📌 With this:
 
 # dots clear देखिन्छ 👀
+
 
 # 🔟 Transparency
 
@@ -427,10 +419,15 @@ s=200
 # 👉 Create:
 
 x = [5,10,15,20,25]
+
 y = [3,7,8,12,15]
+
 # color = purple
-# marker = star
+
+# marker = star *
+
 # size = 150
+
 # grid add गर
 
 
@@ -441,7 +438,7 @@ import matplotlib.pyplot as plt
 x = [1,2,3,4,5]
 y = [2,4,5,4,6]
 
-plt.scatter(x, y, color="blue", marker="o")
+plt.scatter(x, y, color="blue", marker="*")
 
 plt.title("Styled Scatter Plot")
 plt.xlabel("X")

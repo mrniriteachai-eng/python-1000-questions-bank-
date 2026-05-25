@@ -11,8 +11,11 @@
 
 
 # Missing values (NaN)
+
 # Duplicate data
+
 # Wrong format
+
 # Empty cells
 
 
@@ -49,7 +52,9 @@ print(pd.__version__)
 # Real world data मा अक्सर हुन्छ:
 
 # student marks missing
+
 # name missing
+
 # age missing
 
 # 👉 यस्ता खाली values detect गर्ने process = Missing Values Check
@@ -448,6 +453,7 @@ df["name"].fillna("Unknown", inplace=True)
 # 👉 एउटै data 2–3 पटक repeat भयो भने, extra copy हटाइदिन्छ ❌
 
 # 📊 Example Data
+
 import pandas as pd
 
 data = {
@@ -457,6 +463,7 @@ data = {
 
 df = pd.DataFrame(data)
 print(df.drop_duplicates())
+
 # 📤 Original Data
 #    name  marks
 # 0   Ram     80

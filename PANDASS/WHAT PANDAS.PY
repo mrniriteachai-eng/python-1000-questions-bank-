@@ -39,9 +39,13 @@
 # 👉 Pandas ले solve गर्छ:
 
 # ✔ Data clean गर्ने
+
 # ✔ Filter गर्ने
+
 # ✔ Calculation (sum, average)
+
 # ✔ Analysis गर्ने
+
 
 # 🔥 Simple Code Example
 

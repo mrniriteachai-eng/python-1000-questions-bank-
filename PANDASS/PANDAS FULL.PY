@@ -12,7 +12,7 @@
 
 # Import
 
-import pandas as 
+import pandas as pd
 
 
 # 📊 MODULE 2: CORE DATA STRUCTURES

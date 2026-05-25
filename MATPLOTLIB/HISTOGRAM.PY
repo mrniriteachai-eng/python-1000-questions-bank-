@@ -1,5 +1,6 @@
 # 📊 Histogram के हो?
 
+
 # 👉 Histogram = data को distribution (spread) देखाउने graph
 
 # 📌 Example:
@@ -13,7 +14,9 @@
 # 👉 Bar chart जस्तो देखिन्छ, तर:
 
 # Bar chart → categories compare
+
 # Histogram → numeric data को range देखाउँछ
+
 
 
 
@@ -29,6 +32,22 @@ plt.title("Marks Distribution")
 plt.xlabel("Marks Range")
 plt.ylabel("Frequency")
 
+plt.show()
+
+
+
+
+
+import matplotlib.pyplot as plt
+
+
+age = [18, 19, 20, 21, 22, 23, 24, 25, 26, 27]
+
+plt.hist(age)
+plt.title("age")
+
+plt.xlabel("age range")
+plt.ylabel("range")
 plt.show()
 
 
@@ -67,6 +86,8 @@ plt.hist(marks)
 # Matplotlib:
 
 # data लाई ranges मा divide गर्छ
+
+
 # प्रत्येक range मा कति values छन् count गर्छ
 
 
@@ -199,6 +220,19 @@ bins=5,
 # 👉 each bin width ≈ 10
 
 
+
+
+import pandas as pd
+
+data = {
+    "StudyHours": [1, 2, 3],
+    "Marks": [2, 4, 6]
+}
+
+df = pd.DataFrame(data)
+
+print(df.corr())
+
 # 📊 Approx bins
 
 marks = [40, 50, 55, 60, 65, 70, 75, 80, 85, 90]
@@ -217,7 +251,7 @@ marks = [40, 50, 55, 60, 65, 70, 75, 80, 85, 90]
 
 # Example:
 
-# 40–50 → 2 values
+# 40–50 → 1 values
 
 # 👉 त्यसैले bar height = 2
 
@@ -276,6 +310,7 @@ plt.ylabel("Frequency")
 # 70–80 → 2 students
 
 # 1️⃣1️⃣ Grid
+
 plt.grid()
 
 # 👉 background मा horizontal/vertical lines
@@ -305,6 +340,7 @@ distribution analysis
 skew detection
 data spread understanding
 outlier finding
+
 🔥 Experiment (Important)
 
 Try this:
@@ -314,6 +350,9 @@ bins=2
 Then:
 
 bins=10
+
+
+
 
 
 # 🎯 Customized Histogram (Full Control)
@@ -634,4 +673,5 @@ plt.show()
 
 Data: [10,20,20,30,40,40,40,50,60,70]
 bins = 4
+
 # Add title + labels

@@ -335,7 +335,7 @@ print(a.dtype)
 
 ###
 import numpy as np
-a = np.array([1,2,3], dtype=float)
+a = np.array([1,2,3], dtype= str)
 print(a.dtype)
 
 # 🧪 Practice
@@ -421,7 +421,8 @@ x = np.array([10, 20, 30, 40, 50])
 
 print(x.size)      # 5 elements
 print(x.itemsize)  # 4 bytes (int32)
-print(x.nbytes)    # 20 bytes
+print(x.nbytes) 
+print(x.any)   # 20 bytes
 
 # 🎯 Why .nbytes important?
 

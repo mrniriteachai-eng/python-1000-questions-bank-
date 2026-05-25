@@ -1,3 +1,39 @@
+# 📊 Matplotlib के हो?
+
+# Matplotlib Python को एउटा powerful library हो जसले graphs / charts / data visualization बनाउन प्रयोग हुन्छ।
+
+# 👉 Simple भाषामा:
+
+# Data लाई picture (graph) मा बदल्ने tool हो।
+
+# 🔥 Matplotlib किन प्रयोग गर्ने?
+
+# 📈 Line graph (trend देखाउन)
+
+# 📊 Bar chart (comparison)
+
+# 🥧 Pie chart (percentage)
+
+# 📉 Data analysis visualization (AI/ML मा धेरै use हुन्छ)
+
+# ⚙️ Install गर्ने तरिका
+
+# VS Code terminal मा:
+
+# pip install matplotlib
+
+
+# 🎯 AI/Engineering मा किन important?
+
+# Data analysis गर्न
+
+# Machine learning result visualize गर्न
+
+# Reports बनाउने
+
+# Eg
+
+
 import matplotlib.pyplot as plt
 
 subjects = ["Math", "Science", "English"]
@@ -6,25 +42,41 @@ marks = [80, 90, 75]
 plt.plot(subjects, marks)
 plt.show()
 
-####
+
+#### 
 
 import matplotlib.pyplot as plt
 
-subject = ["math", "physics", "biology"]
-marks = [80, 90, 100]
+name  = ["nirmal", "bhupen", "mahesh"]
 
-plt.plot(subject, marks)
+age = [18, 19, 20]
+
+plt.plot(name, age)
 plt.show()
+
+
+
+
+####
+
 
 # 👉 यो simple line graph हो।
 
 
+
+
 # 📊 MATPLOTLIB FULL COURSE (STEP BY STEP)
+
 # 🟢 Lesson 1: Introduction + Setup
+
+
 # 📦 Install
+
 # pip install matplotlib
 
 # 🟢 Lesson 2: Line Graph (Basic)
+
+
 
 import matplotlib.pyplot as plt
 
@@ -39,20 +91,20 @@ plt.ylabel("Y Axis")
 
 plt.show()
 
-
-
 import matplotlib.pyplot as plt
 
-x = [1,3,5,7,9]
-y = [2,4,6,8,10]
+x = [3, 4, 5]
 
-plt.plot(x,y)
+y = [4, 6, 7]
 
-plt.title("my project")
+plt.plot(x, y)
 
-plt.xlabel("x Axis")
-plt.ylabel("y Axis")
+plt.title("my first graph")
+plt.xlabel("num")
+plt.ylabel("number")
+
 plt.show()
+
 
 
 
@@ -60,27 +112,35 @@ plt.show()
 # 📌 यहाँ:
 
 # title() = graph name
-# xlabel() = x axis name
-# ylabel() = y axis name
+
+# xlabel() = num
+
+# ylabel() = number
 
 
 
 
 # 🔍 Step-by-step explanation
+
+
 # 1️⃣
-# import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 
 # 👉 यहाँ:
 
 # matplotlib.pyplot = graph बनाउने module
+
 # plt = shortcut name (बारम्बार लेख्न सजिलो)
+
 # 2️⃣
+
 x = [1, 2, 3, 4, 5]
 y = [2, 4, 6, 8, 10]
 
 # 👉 यो data हो:
 
 # x = horizontal axis (X-axis)
+
 # y = vertical axis (Y-axis)
 
 # 📌 pair बन्यो:
@@ -90,7 +150,9 @@ y = [2, 4, 6, 8, 10]
 (3,6)
 (4,8)
 (5,10)
+
 # 3️⃣
+
 # plt.plot(x, y)
 
 # 👉 यो main line हो:
@@ -101,6 +163,7 @@ y = [2, 4, 6, 8, 10]
 # 📈 Result: straight line (किनकि y = 2x)
 
 # 4️⃣
+
 # plt.title("My First Graph")
 
 # 👉 Graph को name/title सेट गर्छ
@@ -113,14 +176,17 @@ plt.ylabel("Y Axis")
 
 # X-axis → "X Axis"
 # Y-axis → "Y Axis"
+
 # 6️⃣ (सबैभन्दा important)
 
 plt.show()
 
 # 👉 बिना यस:
+
 # ❌ graph देखिँदैन
 
 # 👉 यसले:
+
 # ✔️ graph screen मा देखाउँछ
 
 # 🎯 Final Output के हुन्छ?
@@ -138,6 +204,7 @@ plt.show()
 # 👉 यहाँ relation:
 
 # y = 2x
+
 # 🔥 Quick Check (तिमी answer देउ)
 
 # 👉 यदि:
@@ -150,9 +217,22 @@ y = [1, 4, 9, 16, 25]
 # 🟢 Lesson 3: Bar Chart
 
 
+
+
+
+
+
+
+
 # 📊 Bar Chart के हो?
 
+
+
+
+
 # 👉 Bar Chart = different चीजहरू compare गर्न प्रयोग हुन्छ
+
+
 
 # उदाहरण:
 
@@ -177,26 +257,34 @@ plt.ylabel("Marks")
 
 plt.show()
 
-######
+
 
 import matplotlib.pyplot as plt
 
-subject = ["math", "physics", "biology"]
-marks = [85, 90, 95]
+name = ["nirmal", "saud", "ram"]
 
-plt.bar(subject, marks)
+marks = [90, 95, 100]
 
-plt.title("subject marks")
-plt.xlabel("subject")
+plt.bar(name , marks, color=["red", "blue", "green"])
+
+plt.title("students marks")
+plt.xlabel("name")
 plt.ylabel("marks")
+plt.show()
 
-plt.show ()
+######
+
+
 
 
 # 🔍 Step-by-step बुझौँ
-# 1️⃣ Data
 
+# 1️⃣ 
+
+
+# x axis 
 subjects = ["Math", "Science", "English"]
+
 marks = [85, 90, 78]
 
 # 👉
@@ -214,7 +302,9 @@ plt.bar(subjects, marks)
 # 3️⃣ Labels + Title
 
 plt.title("Student Marks")
+
 plt.xlabel("Subjects")
+
 plt.ylabel("Marks")
 
 # 👉 graph readable बनाउँछ
@@ -236,6 +326,9 @@ plt.show()
 
 
 # 🎨 Customize Bar Chart
+
+
+
 
 
 plt.bar(subjects, marks, color="green")
@@ -260,17 +353,7 @@ plt.show()
 
 ######
 
-import matplotlib.pyplot as plt
 
-subject = ["math", "physics", "biology"]
-marks = [90, 95, 100]
-
-plt.bar(subject, marks, color = ["red", "blue", "green"])
-
-plt.title("marks comparison")
-plt.xlabel("subject")
-plt.ylabel(marks)
-plt.show()
 
 
 # 🧠 Important Concept
@@ -296,6 +379,10 @@ plt.show()
 
 
 
+
+
+
+
 # 🥧 Pie Chart के हो?
 
 
@@ -303,6 +390,7 @@ plt.show()
 # 👉 Pie Chart = data लाई percentage / भाग (portion) मा देखाउने chart
 
 # 📌 Circle लाई टुक्रा-टुक्रा (slices) मा divide गर्छ
+
 # 👉 Each slice = data को हिस्सा
 
 # 🧑‍💻 Basic Example
@@ -312,7 +400,7 @@ import matplotlib.pyplot as plt
 labels = ["Math", "Science", "English"]
 marks = [85, 90, 75]
 
-plt.pie(marks, labels=labels)
+plt.pie(marks, labels=labels, autopct="%1.1f%%")
 
 plt.title("Marks Distribution")
 
@@ -329,6 +417,8 @@ marks = [85, 90, 75]
 # 👉 marks = value (size of slice)
 
 # 2️⃣ Main Function
+
+
 plt.pie(marks, labels=labels)
 
 # 👉 pie chart बनाउँछ
@@ -379,6 +469,7 @@ plt.show()
 # autopct="%1.1f%%"
 
 # यसको काम:
+
 # 👉 Pie chart मा percentage show गर्ने
 
 
@@ -417,7 +508,11 @@ plt.pie(marks, labels=labels, autopct="%1.1f%%",)
 
 
 
+
+
 # 👉 एउटै graph मा धेरै lines देखाउने
+
+
 # 👉 Compare गर्न use हुन्छ
 
 # उदाहरण: example
@@ -435,8 +530,9 @@ x = [1, 2, 3, 4]
 y1 = [2, 4, 6, 8]   # Line 1
 y2 = [1, 3, 5, 7]   # Line 2
 
-plt.plot(x, y1, label="Line 1")
-plt.plot(x, y2, label="Line 2")
+
+plt.plot(x, y1, color="red", linestyle="--", marker="o", label="Line 1")
+plt.plot(x, y2, color="blue", linestyle="-", marker="*", label="Line 2")
 
 plt.legend()
 
@@ -447,6 +543,7 @@ plt.ylabel("Y Axis")
 plt.show()
 
 # 🔍 Step-by-step बुझौँ
+
 # 1️⃣ Data
 x = [1, 2, 3, 4]
 y1 = [2, 4, 6, 8]
@@ -469,6 +566,7 @@ plt.plot(x, y2, label="Line 2")
 plt.legend()
 
 # 👉 graph मा box देखाउँछ
+
 # 👉 कुन line के हो भनेर देखाउँछ
 
 # 4️⃣ Labels + Title
@@ -480,6 +578,7 @@ plt.ylabel("Y Axis")
 # 5️⃣ Show
 
 plt.show()
+
 # 📈 Output कस्तो हुन्छ?
 
 # 👉 एउटै graph मा:
@@ -505,10 +604,10 @@ plt.plot(x, y2, color="blue", linestyle="-", marker="*", label="Line 2")
 
 # 👉 Create graph:
 
-x = [1,2,3,4]
-Student A marks = [60,70,80,90]
-Student B marks = [50,65,75,85]
-Add legend + title
+# x = [1,2,3,4]
+# Student A marks = [60,70,80,90]
+# Student B marks = [50,65,75,85]
+# Add legend + title
 
 
 
@@ -630,9 +729,9 @@ plt.figure(figsize=(8,5))
 
 x = [1,2,3,4,5]
 y = [5,10,15,20,25]
-color = green
-linestyle = dashed
-marker = circle
+# color = green
+# linestyle = dashed
+# marker = circle
 # grid add गर
 
 

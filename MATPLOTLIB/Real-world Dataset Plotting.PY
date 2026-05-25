@@ -70,6 +70,10 @@ plt.show()
 
 
 import pandas as pd
+
+data
+
+
 import matplotlib.pyplot as plt
 
 df = pd.read_csv("data.csv")
@@ -157,6 +161,7 @@ plt.show()
 plt.plot(df["Name"], df["Math"], marker="o", label="Math")
 plt.plot(df["Name"], df["Science"], marker="o", label="Science")
 plt.plot(df["Name"], df["English"], marker="o", label="English")
+
 
 plt.title("Subject Wise Comparison")
 plt.xlabel("Students")

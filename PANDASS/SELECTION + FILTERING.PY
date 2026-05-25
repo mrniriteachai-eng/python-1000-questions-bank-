@@ -254,6 +254,7 @@ df = pd.DataFrame(data)
 print(df[(df["marks"] > 80) & (df["age"] < 21)])
 
 
+
 # 🧠 Meaning:
 # Sita को marks > 80 ✔
 # Sita को age < 21 ✔

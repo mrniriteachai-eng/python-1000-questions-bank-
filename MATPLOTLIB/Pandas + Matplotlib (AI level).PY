@@ -8,6 +8,18 @@
 
 # Data → Pandas (process) → Matplotlib (visualize) → Insight 🔥
 
+
+# Math Relation
+
+# यो relation लाई simple linear relation भन्न सकिन्छ:
+
+# y=mx+b
+
+# y-intercept
+# x-intercept
+
+
+
 # 📁 Step 1: Real dataset (AI style)
 
 import pandas as pd
@@ -24,7 +36,7 @@ print(df)
 
 import matplotlib.pyplot as plt
 
-plt.plot(df["StudyHours"], df["Marks"], marker="o")
+plt.plot(df["StudyHours"], df["Marks"], marker="*")
 
 plt.title("Study Hours vs Marks")
 plt.xlabel("Study Hours")
@@ -32,7 +44,6 @@ plt.ylabel("Marks")
 
 plt.grid()
 plt.show()
-
 
 
 
@@ -99,6 +110,7 @@ df["StudyHours"]
 # 👉 X-axis data
 
 # 🔹 df["Marks"]
+
 df["Marks"]
 
 # 👉 Marks column select गर्छ
@@ -217,6 +229,9 @@ plt.show()
 # circle markers
 # grid lines
 # title + labels
+
+
+
 # 🧠 AI/Data Science Concept
 
 # This graph helps in:
@@ -258,6 +273,18 @@ data = {
 
 df = pd.DataFrame(data)
 print(df)
+
+
+import pandas as pd  
+data = { 
+    "StudyHours": [1, 2, 3, 4, 5, 6],
+    "Marks": [40, 50, 60, 70, 85, 95]
+}
+
+df = pd.DataFrame(data)
+print(df)
+
+
 
 import matplotlib.pyplot as plt
 
@@ -496,6 +523,8 @@ plt.show()
 # Try adding:
 
 s=200
+
+
 marker="*"
 
 # inside scatter:
@@ -597,6 +626,8 @@ plt.show()
 
 
 # 📥 Step 2: CSV Read गर्ने (Pandas)
+
+
 
 import pandas as pd
 

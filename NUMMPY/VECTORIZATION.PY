@@ -44,7 +44,9 @@ b = np.array([10, 20, 30])
 print(a + b)
 
 [11 22 33]
+
 # 🔢 Square
+
 print(a ** 2)
 
 
