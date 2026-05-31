@@ -1,5 +1,6 @@
 # 📅 DAY 1 — Introduction to Machine Learning
 # 🎯 Topics
+
 # What is AI?
 # What is Machine Learning?
 
